@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;            
+            flex-direction: column;  
+            justify-content: center; 
+            align-items: center;     
+            height: 630px; 
+            background-color: cadetblue; 
+        }
+        
+        .btn{
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="box">Counter</h1>
+        <sapn><h1 id="value">0</h1></sapn>
+        <br>
+        <div class="buttons">
+        <button class="btn decrease" id="btn">DECREASE</button>
+        <button class="btn reset" id="btn">RESET</button>
+        <button class="btn increase" id="btn">INCREASE</button>
+        </div>
+        </div>
+        <div id="output"></div>
+        <script src="Counter.js"></script>
+</body>
+</html>

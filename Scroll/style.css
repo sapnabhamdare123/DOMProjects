@@ -1,0 +1,121 @@
+.main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+nav{
+    background-color:pink;
+    padding: 1rem 1.5rem;
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: pink;
+    box-shadow:green;
+}
+
+.fixed-nav .links a {
+    color:gray;
+}
+
+.fixed-nav .links a:hover{
+    color:deeppink;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    color:red;
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    color:deeppink;
+}
+
+.logo{
+    height: 50px;
+}
+
+.links-container {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.show-links{
+    height: 200px;
+}
+
+.links a {
+    background:orange;
+    color: var(--crl--grey-5);
+    font-size: 1.1rem;
+    text-transform:capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    font-weight:bold;
+    padding: 0.75rem 0;
+}
+
+.links a:hover{
+    color:gray;
+}
+
+@media screen  and (min-width :800px){
+    nav{
+        background-color: transparent;
+    }
+    .nav-center{
+        width: 90vw;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    .nav-header{
+        padding: 0;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .links-container {
+        /* height: auto !important; */
+    }
+    .links {
+        display: flex;
+    }
+    .links a {
+        background: transparent;
+        font-size: 1.1rem;
+        color:rgb(255, 110, 6);
+        text-transform: capitalize;
+        letter-spacing: var(--spacing);
+        display: block;
+        transition: var(--transition);
+        margin: 0 1rem;
+        font-weight: bold;
+        padding: 0.75rem 0;
+    }
+    .links a:hover{
+        color: grey;
+    }
+}
+
+body{
+    background-color: orange;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{  
+            display: flex;            
+            flex-direction: column;  
+            justify-content: center; 
+            align-items: center;     
+            height: 500px;          
+        }
+        .box{
+            background-color:black;
+            color: white;
+            height: 30px;
+            display: flex;
+            width: 250px;
+            align-items: center;
+            border-radius: 5px;
+        }
+        button{
+            margin: 10px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(0, 0, 0);
+            border-bottom: 2px solid rgb(247, 247, 247);
+            height: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      
+    </style>
+</head>
+<body>
+    <nav>
+            <li type="none">Color Flipper</li>
+            <li type="none"><a>Simple</a></li>
+            <li type="none"><a>hex</a></li>
+    </nav>
+        <div class="container">
+            <div class="box"> &nbsp Background Color : <span class="color">#fqf5f8</span></div>
+            <button id="btn" class="btn btn-hero">CLICK ME</button>
+        </div>
+        <div id="output"></div>
+
+  <script src="hex.js">
+   
+  </script>
+</body>
+</html>

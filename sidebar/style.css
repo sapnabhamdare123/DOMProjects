@@ -1,0 +1,113 @@
+body{
+    background-color: rgb(233, 233, 233);
+}
+nav{
+    background-color:rgb(255, 255, 255);
+    display:inline-block;
+    width: 350px;
+    height: 640px;
+}
+
+.x-mark{
+    color: rgb(188, 25, 25);
+    font-size: 30px;
+    position: relative;
+    left: 110px;
+    bottom: 13px;
+}
+
+
+
+.x-mark{
+    transform:rotate(-90deg) ;
+    transition:transform 0.3s ease;
+}
+
+.x-mark:hover {
+    transform: rotate(100deg); 
+}
+
+.nav-toggle{
+    float: right;
+    color: rgb(12, 170, 222);
+    font-size: 40px;
+    border: none;
+}
+
+
+.nav-toggle {
+    animation: scaleAnimation 2s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.2); .nav-toggle {
+            animation: scaleAnimation 2s infinite alternate;
+        }
+        
+        @keyframes scaleAnimation {
+            0% {
+                transform: scale(1); /* Normal size */
+            }
+            50% {
+                transform: scale(1.2); /* Slightly larger */
+            }
+            100% {
+                transform: scale(1); /* Back to normal size */
+            }
+        }  
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
+
+a{
+    text-decoration: none;
+    color: rgb(90, 86, 86);
+    font-size: 25px;
+
+}
+
+ul{
+    list-style-type:none;   
+    
+}
+
+.social-icons{
+    display: flex;
+    color: rgb(80, 187, 222);
+    font-size: 30px;
+    position: relative;
+    top: 550px;
+    position: fixed;
+}
+
+.icons:hover{
+    color: black;
+}
+
+
+.icons{
+    margin: 10px;
+}
+
+.a-links{
+    margin-top: 30px;
+}
+
+.a-links a:hover {
+    color: rgb(10, 185, 243); 
+ }
+
+ .a-links:hover{
+    background-color:rgba(155, 207, 224, 0.936); 
+ }
+
+
+ nav.hidden {
+    display: none;
+}

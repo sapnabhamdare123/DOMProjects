@@ -1,0 +1,36 @@
+.main {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+img {
+    height: 330px;
+    margin-left: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: rgb(193, 200, 207);
+    width: 500px;
+    border-radius: 10px;
+    float: right;
+    margin-right: 60px;
+    height: 340px;
+    margin-top: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    display: none;
+    margin-left: 25px;
+}
+
+#History {
+    display: block;
+}
